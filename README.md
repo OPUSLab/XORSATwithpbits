@@ -1,7 +1,9 @@
 # XORSATwithpbits
 Code and data for the 3R3X (XORSAT) problem with probabilistic bits.
 
-This repository contains the code used to solve the 3R3X Challenge using p-bits running the Adaptive Parallel Tempering (APT) algorithm. For more details, please see our paper on arXiv (link).
+This repository contains the code used to solve the 3R3X Challenge using p-bits running the Adaptive Parallel Tempering (APT) algorithm. For more details, please see our paper on arXiv: 
+
+https://arxiv.org/pdf/2312.08748.pdf
 
 The `sims` directory contains the code used to produce the CPU benchmark. `sims/APT_preprocess.m` implements the algorithm for generating the problem-dependent temperature schedule. `sims/APT.m` implements the Adapative Parallel Tempering algorithm, and `sims/MCMC_GC.m` implements our graph colored Markov Chain Monte Carlo for updating the p-bit states. Finally, `sims/massive_sweep.m` is the top level file for running and storing the outputs of the algorithms.
 
